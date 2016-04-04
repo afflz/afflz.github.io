@@ -38,8 +38,8 @@ a:link {
 }
 
 div , div p  {
-  transition: 1s;
-  -webkit-transition: 1s;
+  transition: 0.65s;
+  -webkit-transition: 0.65s;
 }
 h1 {
 color: white;
