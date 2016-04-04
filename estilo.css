@@ -1,0 +1,144 @@
+@font-face {
+    font-family: MKX;
+    src: url(fonts/mkx.ttf);
+}
+@font-face {
+font-family: harabara;
+src :url(fonts/Harabara.ttf);
+}
+@font-face {
+font-family: o24d;
+src :url(fonts/o24d.ttf);
+}
+@font-face {
+font-family: bebas;
+src :url(fonts/bebas.otf);
+}
+
+
+header {
+	padding: 2.5%;
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  background-color: purple;
+  border-bottom: thick solid yellow;
+  font-family: bebas;
+  color: yellow;
+  z-index: 100;
+  font-size: 275%;
+  text-align: center;
+	margin: -10px -10px 2% -10px;
+}
+header p{
+margin: 0;
+border: 0;
+}
+a:link {
+    text-decoration: none;
+}
+
+div , div p  {
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+h1 {
+color: white;
+text-align: center;
+font-size: 275%;
+font-weight: lighter;
+font-family: bebas;
+}
+
+/*________________________________________________________________*/
+/*________________________________________________________________*/
+body {
+    	background-color: black;
+      background-image: url(b.jpg);
+      background-size: 100% 100%;
+      background-attachment: fixed;
+}
+.mainpanel {
+	margin: 2.5% auto;
+	width: 80%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 5%;
+	border: thick solid yellow;
+	border-radius: 20px;
+  background-color: rgb(100, 15, 185);
+}
+
+.item_menu{
+  color: yellow;
+}
+@media screen and (max-width: 960px ) {
+.item_menu{
+  overflow-y: hidden;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: bebas;
+}
+.foto {
+  padding-top: 30%;
+  padding-bottom: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.foto:hover {
+  padding-top: 45%;
+  padding-bottom: 45%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+}
+@media screen and (min-width: 960px ) {
+.item_menu {
+width: 33%;
+height: auto;
+margin: auto;
+padding: auto;
+align-content: center;
+border: 0;
+float:left;
+overflow: visible;
+/*background-color: blue;*/
+}
+.foto {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.foto:hover {
+transform: scale(1.25,1.25);
+}
+}
+.foto {
+    border-radius: 100%;
+  border: thick solid yellow;
+  background-size: 100% 100%;
+}
+
+.legenda p{
+  margin: 1%;
+  text-align: justify;
+  color: white;
+  font-size: 175%;
+  font-family: bebas;
+  z-index: -99;
+}
+.data p{
+  margin: 1%;
+  text-align: left;
+  color: white;
+  font-size: 125%;
+  font-family: o24d;
+  z-index: -99;
+}
+.legenda:hover {
+  transform: scale(1.25,1.25);
+  background-color: rgb(171, 119, 207);
+  border-radius: 25px;
+}

@@ -1,0 +1,39 @@
+
+header {
+  background-color: black;
+  border-bottom: thick solid rgb(0,193,100);
+  color: white;
+}
+
+h1 {
+color: white;
+}
+
+body {
+    	background-color: black;
+}
+.mainpanel {
+
+	border: thick solid rgb(0,193,100);
+  background-color: rgb(70, 100, 90);
+}
+
+.item_menu{
+  color: white;
+}
+
+.foto {
+  border: thick solid rgb(0,193,100);
+}
+
+.legenda p{
+  color: white;
+
+}
+.data p{
+  color: white;
+
+}
+.legenda:hover {
+  background-color: rgba(120, 150, 140, 0.75);
+}
