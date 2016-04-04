@@ -20,10 +20,7 @@ header {
 	padding: 2.5%;
   padding-top: 2.5%;
   padding-bottom: 5%;
-  background-color: purple;
-  border-bottom: thick solid yellow;
   font-family: bebas;
-  color: yellow;
   z-index: 100;
   font-size: 275%;
   text-align: center;
@@ -42,7 +39,6 @@ div , div p  {
   -webkit-transition: 0.65s;
 }
 h1 {
-color: white;
 text-align: center;
 font-size: 275%;
 font-weight: lighter;
@@ -52,7 +48,6 @@ font-family: bebas;
 /*________________________________________________________________*/
 /*________________________________________________________________*/
 body {
-    	background-color: black;
       background-image: url(b.jpg);
       background-size: 100% 100%;
       background-attachment: fixed;
@@ -63,14 +58,10 @@ body {
   padding-left: 1.5%;
   padding-right: 1.5%;
   padding-bottom: 5%;
-	border: thick solid yellow;
 	border-radius: 20px;
-  background-color: rgb(100, 15, 185);
 }
 
-.item_menu{
-  color: yellow;
-}
+
 @media screen and (max-width: 960px ) {
 .item_menu{
   overflow-y: hidden;
@@ -117,14 +108,12 @@ transform: scale(1.25,1.25);
 }
 .foto {
     border-radius: 100%;
-  border: thick solid yellow;
   background-size: 100% 100%;
 }
 
 .legenda p{
   margin: 1%;
   text-align: justify;
-  color: white;
   font-size: 175%;
   font-family: bebas;
   z-index: -99;
@@ -132,13 +121,11 @@ transform: scale(1.25,1.25);
 .data p{
   margin: 1%;
   text-align: left;
-  color: white;
   font-size: 125%;
   font-family: o24d;
   z-index: -99;
 }
 .legenda:hover {
-  transform: scale(1.25,1.25);
-  background-color: rgb(171, 119, 207);
+  transform: scale(1.1,1.1);
   border-radius: 25px;
 }
