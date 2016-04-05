@@ -1,7 +1,7 @@
 
 header {
   background-color: black;
-  border-bottom: thick solid rgb(227,27,27);
+  border-bottom: thick solid rgb(232,64,64);
   color: white;
 }
 
@@ -14,8 +14,8 @@ body {
 }
 .mainpanel {
 
-	border: thick solid rgb(227,27,27);
-  background-color: rgb(119, 0,0);
+	border: thick solid rgb(232,64,64);
+  background-color: rgb(132, 32,32);
 }
 
 .item_menu{
@@ -23,7 +23,7 @@ body {
 }
 
 .foto {
-  border: thick solid rgb(227,27,27);
+  border: thick solid rgb(232,64,64);
 }
 
 .legenda p{
@@ -35,5 +35,5 @@ body {
 
 }
 .legenda:hover {
-  background-color: rgba(245, 65, 65,0.75);
+  background-color: rgba(255, 96, 96,0.75);
 }
