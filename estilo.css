@@ -54,17 +54,10 @@ body {
 }
 .mainpanel {
 	margin: 2.5% auto;
-<<<<<<< HEAD
 	width: 75%;
   padding-left: 4%;
   padding-right: 4%;
   padding-bottom: 5%;
-=======
-	width: 80%;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-  padding-bottom: 2.5%;
->>>>>>> origin/master
 	border-radius: 20px;
 }
 
