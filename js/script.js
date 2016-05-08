@@ -5,7 +5,7 @@ var afflzApp = angular.module("afflzApp", ["ngRoute"]);
 afflzApp.config(function($routeProvider) {
 	$routeProvider.when("/", {
 		templateUrl : "templates/home.html",
-		controller  : "mainController"
+		controller  : "mainController",
 	})
 
 	// route for the skills page
@@ -16,8 +16,8 @@ afflzApp.config(function($routeProvider) {
 
 	// route for the exps.html page
 	.when("/exps", {
-		templateUrl : "exps.html",
-		controller  : "expsController"
+		templateUrl : "templates/exps.html",
+		controller  : "expsController",
 	})
 	.otherwise(
 		{
@@ -25,34 +25,15 @@ afflzApp.config(function($routeProvider) {
 		}
 	);
 });
-
 // create the controller and inject Angular"s $scope
-afflzApp.controller("mainController", function() {
-	var header = $.getElementsByTagName("head")[0];
-	var styleSheet = $.createElement("link");
-	styleSheet.rel = "stylesheet";
-	styleSheet.type = "text/css";
-	styleSheet.href = "colors_b.css"; // name of your css file
-	styleSheet.media = "all";
-	header.appendChild(styleSheet);
+afflzApp.controller("mainController", function($scope) {
+	$scope.color = "r";
 });
 
-afflzApp.controller("skillsController", function() {
-	var header = $.getElementsByTagName("head")[0];
-	var styleSheet = $.createElement("link");
-	styleSheet.rel = "stylesheet";
-	styleSheet.type = "text/css";
-	styleSheet.href = "colors_g.css"; // name of your css file
-	styleSheet.media = "all";
-	header.appendChild(styleSheet);
+afflzApp.controller("skillsController", function($scope) {
+	$scope.color = 'r';
 });
 
-afflzApp.controller("expsController", function() {
-	var header = $.getElementsByTagName("head")[0];
-	var styleSheet = $.createElement("link");
-	styleSheet.rel = "stylesheet";
-	styleSheet.type = "text/css";
-	styleSheet.href = "colors_r.css"; // name of your css file
-	styleSheet.media = "all";
-	header.appendChild(styleSheet);
+afflzApp.controller("expsController", function($scope) {
+	$scope.color = 'r';
 });
