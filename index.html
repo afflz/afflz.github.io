@@ -3,71 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-  <link rel="stylesheet" type="text/css" href="css/colors_b.css"/>
+
+  <script data-require="angular.js@1.4.6" data-semver="1.4.6" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+  <script src="js/script.js"></script>
+
   <link rel="icon" href="css/img/fav.png"/>
   <title> AFFLZ </title>
 </head>
-<body>
+<body ng-app="afflzApp">
   <header>
     <nav class="navbar navbar-fixed-top nav_color">
       <div class="row">
         <div class="hidden-md">
           <a href="#menu" data-toggle="collapse"><div class="item_menu col-xs-12 "><p>MENU</p></div></a>
           <div id="menu" class="collapse">
-            <a href="skills.html"><div class="item_menu col-xs-12 "><p>HABILIDADES</p></div></a>
-            <a href="index.html"><div class="item_menu col-xs-12 "><p>HOME</p></div></a>
-            <a href="exps.html"><div class="item_menu col-xs-12 "><p>PROJETOS</p></div></a>
+            <a href="#skills"><div class="item_menu col-xs-12 "><p>HABILIDADES</p></div></a>
+            <a href=""><div class="item_menu col-xs-12 "><p>HOME</p></div></a>
+            <a href="#exps"><div class="item_menu col-xs-12 "><p>PROJETOS</p></div></a>
           </div>
         </div>
         <div class="hidden-xs">
-          <a href="skills.html"><div class="item_menu col-md-4 "><p>HABILIDADES</p></div></a>
-          <a href="index.html"><div class="item_menu item_menu_s col-md-4 "><p>HOME</p></div></a>
-          <a href="exps.html"><div class="item_menu col-md-4 "><p>PROJETOS</p></div></a>
+          <a href="#/skils"><div class="item_menu col-md-4 "><p>HABILIDADES</p></div></a>
+          <a href="#/"><div class="item_menu item_menu_s col-md-4 "><p>HOME</p></div></a>
+          <a href="#/exps"><div class="item_menu col-md-4 "><p>PROJETOS</p></div></a>
         </div>
       </div>
     </nav>
   </header>
   <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
-  <div class="row">
-    <div class="col-md-2 col-xs-6 foto-offset">
-      <div class="foto"></div>
-    </div>
-  </div>
-  <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
-  <div class="row">
-    <div class="col-md-12 mainpanel_color">
-      <div class="legenda">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
-  <div class="row">
-    <div class="col-md-12 mainpanel_color">
-      <div class="legenda">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
-  <div class="row">
-    <div class="col-md-12 mainpanel_color">
-      <div class="legenda">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </div>
+
+
+  <!-- angular templating -->
+  <!-- this is where content will be injected -->
+  <div ng-view></div>
+
+
   <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
   <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
   <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
