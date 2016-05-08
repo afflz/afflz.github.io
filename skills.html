@@ -17,16 +17,24 @@
   <header>
     <nav class="navbar navbar-fixed-top nav_color">
       <div class="row">
-        <a href="skills.html"><div class="item_menu item_menu_s col-xs-12 col-md-4"><p>HABILIDADES</p></div></a>
-        <a href="index.html"><div class="item_menu col-xs-12 col-md-4"><p>HOME</p></div></a>
-        <a href="exps.html"><div class="item_menu col-xs-12 col-md-4"><p>PROJETOS</p></div></a>
+        <div class="hidden-md">
+          <a href="#menu" data-toggle="collapse"><div class="item_menu col-xs-12 "><p>MENU</p></div></a>
+          <div id="menu" class="collapse">
+            <a href="skills.html"><div class="item_menu col-xs-12 "><p>HABILIDADES</p></div></a>
+            <a href="index.html"><div class="item_menu col-xs-12 "><p>HOME</p></div></a>
+            <a href="exps.html"><div class="item_menu col-xs-12 "><p>PROJETOS</p></div></a>
+          </div>
+        </div>
+        <div class="hidden-xs">
+          <a href="skills.html"><div class="item_menu item_menu_s col-md-4 "><p>HABILIDADES</p></div></a>
+          <a href="index.html"><div class="item_menu col-md-4 "><p>HOME</p></div></a>
+          <a href="exps.html"><div class="item_menu col-md-4 "><p>PROJETOS</p></div></a>
+        </div>
       </div>
     </nav>
   </header>
-  <div class="row"><p></p></div>
-  <div class="row"><p></p></div>
-  <div class="row"><p></p></div>
 
+  <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
 
   <div class="row">
     <div class="col-md-10 col-md-offset-1 mainpanel_color mainpanel">
@@ -34,42 +42,54 @@
       <table class="table legenda">
         <tbody>
           <tr>
-            <td><p>Linguagens e Tecnologias</p></td>
-            <td><p>C, JAVA, HTML5/CSS3, VHDL, PHP, MySQL</p></td>
+            <td><p> Programação</p></td>
+            <td><p>C, JAVA</p></td>
           </tr>
           <tr>
-            <td><p>Softwares</p></td>
-            <td><p>Photoshop, Ilustrator, Dreamweaver</p></td>
-          </tr>
-          <tr>
-            <td><p>Sistemas operacionais:</p></td>
-            <td><p>
-              <i class="fa fa-linux" aria-hidden="true"></i>
-              <i class="fa fa-apple" aria-hidden="true"></i>
-              <i class="fa fa-windows" aria-hidden="true"></i>
-            </p></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-xs-12">
-          <h2>Company Bio</h2>
-          <p >Caso tenha se interessado, entre em contato :</p>
-        </div>
-        <div class="col-md-6 col-xs-12">
-          <h2>Contatos</h2>
-          <ul>
-            <li><a  href="https://github.com/afflz"><i class="fa fa-github" aria-hidden="true"></i>  Git Hub</a></li>
-            <li><a  href="#!"><i class="fa fa-flickr" aria-hidden="true"></i>  Flickr</a></li>
-            <li><i class="fa fa-envelope" aria-hidden="true"></i> A.lopes.ff@gmail.com </li>
-          </ul>
-        </div>
+            <td><p> Web </p></td>
+            <td><p> <i class="fa fa-html5" aria-hidden="true"></i> HTML5,
+              <i class="fa fa-css3" aria-hidden="true"></i> CSS3,
+                    JavaScript, PHP, MySQL</p></td>
+            </tr>
+            <tr>
+              <td><p>Softwares</p></td>
+              <td><p>Photoshop, Ilustrator, Dreamweaver</p></td>
+            </tr>
+            <tr>
+              <td><p>Sistemas operacionais:</p></td>
+              <td><p>
+                <i class="fa fa-linux" aria-hidden="true"></i>
+                <i class="fa fa-apple" aria-hidden="true"></i>
+                <i class="fa fa-windows" aria-hidden="true"></i>
+              </p></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </footer>
-</body>
-</html>
+
+    <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
+    <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
+    <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <h2>Company Bio</h2>
+            <p >Caso tenha se interessado, entre em contato :</p>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <h2>Contatos</h2>
+            <ul>
+              <li><a  href="https://github.com/afflz"><i class="fa fa-github" aria-hidden="true"></i>  Git Hub</a></li>
+              <li><a  href="#!"><i class="fa fa-flickr" aria-hidden="true"></i>  Flickr</a></li>
+              <li><a  href="#!"><i class="fa fa-500px" aria-hidden="true"></i> 500px</a></li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> A.lopes.ff@gmail.com </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>

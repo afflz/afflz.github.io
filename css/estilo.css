@@ -14,7 +14,9 @@
   font-family: bebas;
   src :url(fonts/bebas.otf);
 }
-
+.bg-color-black{
+  background-color: black;
+}
 header {
   background-color: black;
   color: white;
@@ -94,22 +96,19 @@ body {
 }
 @media screen and (max-width: 960px ) {
   body {
-    padding-top: 46%;
+    padding-top: 16%;
   }
-  .foto {
-    padding-top: 33%;
-    padding-bottom: 33%;
-    margin-left: 15%;
-    margin-right: 15%;
+  .item_menu{
+    border: thick solid black;
+  }
+  .foto-offset{
+    margin-left:13%;
   }
 }
 @media screen and (min-width: 960px ) {
-  .foto {
-    padding: 75%;
-    background-size: 100% 100%;
-
+  .foto-offset{
+    margin-left:38%;
   }
-
   .foto:hover {
     transform: rotate(360deg);
     border-color: black;
@@ -120,13 +119,11 @@ body {
     border-radius: 0;
     overflow: visible;
   }
-  .cheio{
-    bottom: 50%;
-    overflow: hidden;
-  }
 }
 .foto {
   background-image: url(img/a.jpg);
+  padding: 75%;
+  background-size: 100% 100%;
   border-radius: 100%;
   margin-bottom: 0.75%;
 }
@@ -145,5 +142,5 @@ body {
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    margin: auto;
+  margin: auto;
 }

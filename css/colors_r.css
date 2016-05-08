@@ -2,6 +2,9 @@
   border: thick solid rgb(232,64,64);
   background-color: rgb(132, 32,32);
 }
+.mainpanel_color_divider{
+  border: thick solid rgb(232,64,64);
+}
 
 .nav_color{
   border-bottom: thick solid rgb(232,64,64);
