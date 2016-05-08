@@ -1,39 +1,18 @@
-
-header {
-  background-color: black;
-  border-bottom: thick solid rgb(232,64,64);
-  color: white;
-}
-
-h1 {
-color: white;
-}
-
-body {
-    	background-color: black;
-}
-.mainpanel {
-
-	border: thick solid rgb(232,64,64);
+.mainpanel_color {
+  border: thick solid rgb(232,64,64);
   background-color: rgb(132, 32,32);
 }
 
-.item_menu{
-  color: white;
+.nav_color{
+  border-bottom: thick solid rgb(232,64,64);
 }
 
 .foto {
   border: thick solid rgb(232,64,64);
 }
-
-.legenda p{
-  color: white;
-
+.item_menu_s{
+  background-color: rgb(232,64,64);
 }
-.data p{
-  color: white;
-
-}
-.legenda:hover {
-  background-color: rgba(255, 96, 96,0.75);
+footer{
+	border-top: thick solid rgb(232,64,64);
 }
