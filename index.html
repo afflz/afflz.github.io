@@ -20,16 +20,16 @@
   <link rel="icon" href="css/img/fav.png"/>
   <title> AFFLZ </title>
 </head>
-<body ng-app="afflzApp">
+<body ng-app="afflzApp" >
   <header>
     <nav class="navbar navbar-fixed-top nav_color">
       <div class="row">
         <div class="hidden-md">
           <a data-target="#menu" data-toggle="collapse"><div class="item_menu col-xs-12 "><p>MENU</p></div></a>
           <div id="menu" class="collapse">
-            <a href="#skills"><div class="item_menu col-xs-12 "><p>HABILIDADES</p></div></a>
-            <a href="#/"><div class="item_menu col-xs-12 "><p>HOME</p></div></a>
-            <a href="#exps"><div class="item_menu col-xs-12 "><p>PROJETOS</p></div></a>
+            <a data-target="#menu" data-toggle="collapse" href="#skills"><div class="item_menu col-xs-12 "><p>HABILIDADES</p></div></a>
+            <a data-target="#menu" data-toggle="collapse" href="#/">     <div class="item_menu col-xs-12 "><p>HOME</p></div></a>
+            <a data-target="#menu" data-toggle="collapse" href="#exps">  <div class="item_menu col-xs-12 "><p>PROJETOS</p></div></a>
           </div>
         </div>
         <div class="hidden-xs">
@@ -40,7 +40,7 @@
       </div>
     </nav>
   </header>
-  <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
+  <div class="col-md-12 item_menu"><p></p></div>
 
 
   <!-- angular templating -->
@@ -48,15 +48,16 @@
   <div ng-view></div>
 
 
-  <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
-  <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
-  <div class="row"><div class="col-md-12 item_menu"><p></p></div></div>
+  <div class="row"><div class="col-md-12 col-xs-10 item_menu"><p></p></div></div>
+  <div class="row"><div class="col-md-12 col-xs-10 item_menu"><p></p></div></div>
+  <div class="row"><div class="col-md-12 col-xs-10 item_menu"><p></p></div></div>
+
 
   <footer>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-xs-12">
-          <h2>Company Bio</h2>
+          <h2>Augusto Lopes </h2>
           <p >Caso tenha se interessado, entre em contato :</p>
         </div>
         <div class="col-md-6 col-xs-12">

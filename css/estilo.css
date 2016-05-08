@@ -78,10 +78,12 @@ body {
   background-size: 100% 100%;
   background-attachment: fixed;
   background-color: black;
+  overflow-x: hidden;
 }
 .mainpanel {
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 5.8%;
   padding-bottom: 2.5%;
   border-radius: 20px;
 }
@@ -93,29 +95,34 @@ body {
   color: white;
   background-color: black;
 }
-.item_menu_hide_overflow{
-  margin-left: -10px;
+.col-xs-12{
+  padding-right:0px;
 }
 @media screen and (max-width: 960px ) {
   body {
     padding-top: 16%;
+    overflow-x: hidden;
   }
   .item_menu{
     border: thick solid black;
   }
   .foto-offset{
-    margin-left:13%;
+    margin-left:13.75%;
   }
   .item_menu_hide_overflow{
-    margin-left: -10px;
-    margin-right: -10px;
-
-    padding: 4% 10% 4% 8%;
+    padding: 4% 6% 4% 10%;
+    border-left: none;
+    border-right: none;
   }
 }
 @media screen and (min-width: 960px ) {
   .foto-offset{
     margin-left:38%;
+  }
+  .item_menu_hide_overflow{
+    padding: 1% 4% 1% 4%;
+    border-left: none;
+    border-right: none;
   }
   .foto:hover {
     transform: rotate(360deg);
@@ -142,7 +149,6 @@ body {
 
 .legenda p{
   color: white;
-  margin: 1%;
   text-align: justify;
   font-size: 175%;
   font-family: bebas;

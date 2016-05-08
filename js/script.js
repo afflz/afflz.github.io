@@ -27,13 +27,13 @@ afflzApp.config(function($routeProvider) {
 });
 // create the controller and inject Angular"s $scope
 afflzApp.controller("mainController", function($scope) {
-	$scope.color = "r";
+
 });
 
 afflzApp.controller("skillsController", function($scope) {
-	$scope.color = 'r';
+
 });
 
 afflzApp.controller("expsController", function($scope) {
-	$scope.color = 'r';
+
 });
