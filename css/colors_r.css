@@ -3,7 +3,8 @@
   background-color: rgb(132, 32,32);
 }
 .mainpanel_color_divider{
-  border: thick solid rgb(232,64,64);
+  border-top: thick solid rgb(232,64,64);
+  border-bottom:  thick solid rgb(232,64,64);
 }
 
 .nav_color{
@@ -14,5 +15,5 @@
   background-color: rgb(232,64,64);
 }
 footer{
-	border-top: thick solid rgb(232,64,64);
+  border-top: thick solid rgb(232,64,64);
 }

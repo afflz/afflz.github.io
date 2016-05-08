@@ -1,17 +1,18 @@
 .mainpanel_color {
-	border: thick solid rgb(0,127,255);
-  background-color: rgb(20, 75, 125);
+	border-top: thick solid rgb(0,127,255);
+	border-bottom: thick solid rgb(0,127,255);
+	background-color: rgb(20, 75, 125);
 }
 
 .nav_color{
-  border-bottom:thick solid rgb(0,127,255);
+	border-bottom:thick solid rgb(0,127,255);
 }
 
 .foto {
-  border: thick solid rgb(0,127,255);
+	border: thick solid rgb(0,127,255);
 }
 .item_menu_b{
-  background-color: rgb(0,127,255);
+	background-color: rgb(0,127,255);
 }
 footer{
 	border-top: thick solid rgb(0,127,255);
