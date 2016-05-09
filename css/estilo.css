@@ -83,7 +83,7 @@ body {
 .mainpanel {
   padding-left: 2%;
   padding-right: 2%;
-  margin-left: 5.8%;
+  margin-left: 7.5%;
   padding-bottom: 2.5%;
   border-radius: 20px;
 }
@@ -114,10 +114,17 @@ body {
     border-left: none;
     border-right: none;
   }
+  .mainpanel {
+    margin-left: 5.8%;
+    margin-right: -4%;
+  }
 }
 @media screen and (min-width: 960px ) {
   .foto-offset{
     margin-left:38%;
+  }
+  .mainpanel {
+    margin-left: 7.5%;
   }
   .item_menu_hide_overflow{
     padding: 1% 4% 1% 4%;
