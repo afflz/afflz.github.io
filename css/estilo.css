@@ -98,16 +98,47 @@ body {
 .col-xs-12{
   padding-right:0px;
 }
+.foto {
+  background-image: url(img/a.jpg);
+  padding: 75%;
+  background-size: 100% 100%;
+  border-radius: 100%;
+  margin-bottom: 0.75%;
+}
+
+.data p{
+  color: white;
+}
+
+.legenda p{
+  color: white;
+  text-align: justify;
+  font-size: 175%;
+  font-family: bebas;
+  z-index: -99;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  margin: auto;
+}
 @media screen and (max-width: 960px ) {
   body {
     padding-top: 16%;
     overflow-x: hidden;
   }
-  .item_menu{
-    border: thick solid black;
+  .carousel-inner > .item {
+    min-height: 300px;
+    max-height: 300px;
+    align-items: center;
+  }
+  .foto {
+    padding: 75%;
   }
   .foto-offset{
-    margin-left:13.75%;
+    margin-left:15%;
+  }
+  .item_menu{
+    border: thick solid black;
   }
   .item_menu_hide_overflow{
     padding: 4% 6% 4% 10%;
@@ -142,26 +173,18 @@ body {
     overflow: visible;
   }
 }
-.foto {
-  background-image: url(img/a.jpg);
-  padding: 75%;
-  background-size: 100% 100%;
-  border-radius: 100%;
-  margin-bottom: 0.75%;
-}
+@media screen and (min-width: 1200px ) {
+  .foto {
+    padding: 50%;
+  }
+  .foto-offset{
+    margin-left:41%;
+  }
+  .legenda p{
+    font-size: 225%;
+  }
 
-.data p{
-  color: white;
-}
-
-.legenda p{
-  color: white;
-  text-align: justify;
-  font-size: 175%;
-  font-family: bebas;
-  z-index: -99;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  margin: auto;
+  .carousel-inner > .item {
+    min-height: 500px;
+  }
 }
