@@ -78,7 +78,7 @@ body {
   background-size: 100% 100%;
   background-attachment: fixed;
   background-color: black;
-  overflow-x: hidden;
+  max-width: 100%;
 }
 .mainpanel {
   padding-left: 2%;
@@ -96,7 +96,7 @@ body {
   background-color: black;
 }
 .col-xs-12{
-  padding-right:0px;
+  padding-right:0px;  
 }
 .foto {
   background-image: url(img/a.jpg);
