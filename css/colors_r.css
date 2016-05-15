@@ -2,7 +2,7 @@
   border: thick solid rgb(232,64,64);
   background-color: rgb(132, 32,32);
 }
-.mainpanel_color_divider{
+.divider{
   border-top: thick solid rgb(232,64,64);
   border-bottom:  thick solid rgb(232,64,64);
 }
@@ -11,7 +11,7 @@
   border-bottom: thick solid rgb(232,64,64);
 }
 
-.item_menu_r{
+.item-menu_r{
   background-color: rgb(232,64,64);
 }
 footer{

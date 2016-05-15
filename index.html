@@ -4,45 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--Titulo -->
+  <title> AFFLZ </title>
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--Icone -->
+  <link rel="icon" href="css/img/fav.png"/>
 
-  <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-
-  <script data-require="angular.js@1.4.6" data-semver="1.4.6" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
-
-  <script src="js/script.js"></script>
-  <meta name="theme-color" content="rgb(0,0,0)" />
+  <!--Mobile ADRS style -->
+  <meta name="theme-color" content="rgb(0,0,0)"/>
   <meta name="msapplication-navbutton-color" content="rgb(0,0,0)">
   <meta name="apple-mobile-web-app-status-bar-style" content="rgb(0,0,0)">
-  <link rel="icon" href="css/img/fav.png"/>
-  <title> AFFLZ </title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+
+  <!--CSS AND JS-->
+  <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+  <script src="js/script.js"></script>
+
 </head>
 <body ng-app="afflzApp">
   <header>
     <nav class="navbar navbar-fixed-top nav_color">
       <div class="row">
         <div class="hidden-md hidden-lg">
-          <a data-target="#menu" data-toggle="collapse"><div class="item_menu col-xs-12 "><p>MENU</p></div></a>
+          <a data-target="#menu" data-toggle="collapse"><div class="item-menu col-xs-12 "><p>MENU</p></div></a>
           <div id="menu" class="collapse">
-            <a data-target="#menu" data-toggle="collapse" href="#skills"><div class="item_menu col-xs-12 "><p>HABILIDADES</p></div></a>
-            <a data-target="#menu" data-toggle="collapse" href="#/">     <div class="item_menu col-xs-12 "><p>HOME</p></div></a>
-            <a data-target="#menu" data-toggle="collapse" href="#exps">  <div class="item_menu col-xs-12 "><p>PROJETOS</p></div></a>
+            <a data-target="#menu" data-toggle="collapse" href="#skills"><div class="item-menu col-xs-12 "><p>HABILIDADES</p></div></a>
+            <a data-target="#menu" data-toggle="collapse" href="#/">     <div class="item-menu col-xs-12 "><p>HOME</p></div></a>
+            <a data-target="#menu" data-toggle="collapse" href="#exps">  <div class="item-menu col-xs-12 "><p>PROJETOS</p></div></a>
           </div>
         </div>
         <div class="hidden-xs hidden-sm">
-          <a href="#/skills"><div class="item_menu item_menu_g col-md-4 "><p>HABILIDADES</p></div></a>
-          <a href="#/"><div class="item_menu item_menu_b col-md-4 "><p>HOME</p></div></a>
-          <a href="#/exps"><div class="item_menu item_menu_r col-md-4 "><p>PROJETOS</p></div></a>
+          <a href="#/skills"><div class="item-menu item-menu_g col-md-4 "><p>HABILIDADES</p></div></a>
+          <a href="#/"><div class="item-menu item-menu_b col-md-4 "><p>HOME</p></div></a>
+          <a href="#/exps"><div class="item-menu item-menu_r col-md-4 "><p>PROJETOS</p></div></a>
         </div>
       </div>
     </nav>
   </header>
-  <div class="row"><div class="col-md-12 hidden-lg item_menu"><p></p></div></div>
+  <div class="row"><div class="col-md-12 hidden-lg item-menu"><p></p></div></div>
 
 
   <!-- angular templating -->
@@ -50,9 +59,9 @@
   <div ng-view></div>
 
 
-  <div class="row"><div class="col-md-12 col-xs-10 item_menu"><p></p></div></div>
-  <div class="row"><div class="col-md-12 col-xs-10 item_menu"><p></p></div></div>
-  <div class="row"><div class="col-md-12 col-xs-10 item_menu"><p></p></div></div>
+  <div class="row"><div class="col-md-12 col-xs-10 item-menu"><p></p></div></div>
+  <div class="row"><div class="col-md-12 col-xs-10 item-menu"><p></p></div></div>
+  <div class="row"><div class="col-md-12 col-xs-10 item-menu"><p></p></div></div>
 
 
   <footer>

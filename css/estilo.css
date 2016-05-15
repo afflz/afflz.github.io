@@ -14,12 +14,28 @@
   font-family: bebas;
   src :url(fonts/bebas.otf);
 }
+/*________________________________________________________________*/
+/*________________________________________________________________*/
+
+a:link {
+  text-decoration: none;
+}
+
+div , div p  {
+  transition: 0.65s;
+  -webkit-transition: 0.65s;
+}
+p,h1,h2,h3,h4,h5,a{
+  color: white;
+}
+/*________________________________________________________________*/
+/*________________________________________________________________*/
+
 .bg-color-black{
   background-color: black;
 }
 header {
   background-color: black;
-  color: white;
   padding: 2.5%;
   padding-top: 2.5%;
   padding-bottom: 5%;
@@ -33,9 +49,17 @@ header p{
   margin: 0;
   border: 0;
 }
+
+body {
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-color: black;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 footer{
   background-color: black;
-  color: white;
   padding: 2.5%;
   padding-top: 2.5%;
   padding-bottom: 5%;
@@ -48,37 +72,21 @@ footer p{
   border: 0;
   font-size: 150%;
 }
-footer a{
-  color: white;
-}
-a:link {
-  text-decoration: none;
-}
 
-div , div p  {
-  transition: 0.65s;
-  -webkit-transition: 0.65s;
+/*________________________________________________________________*/
+/*________________________________________________________________*/
+.col-xs-12 {
+  padding-right:0px;
 }
-h1 {
-  text-align: center;
-  font-size: 275%;
-  font-weight: lighter;
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  margin: auto;
+}
+/*________________________________________________________________*/
+/*________________________________________________________________*/
+.divider {
   font-family: bebas;
-  color: white;
-}
-.titulo{
-  font-weight: lighter;
-  font-family: o24d;
-  color: white;
-}
-
-/*________________________________________________________________*/
-/*________________________________________________________________*/
-body {
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  background-color: black;
-  max-width: 100%;
+  text-align: center;
 }
 .mainpanel {
   padding-left: 2%;
@@ -87,16 +95,12 @@ body {
   padding-bottom: 2.5%;
   border-radius: 20px;
 }
-.item_menu{
+.item-menu{
   padding-top: 1%;
   padding-bottom: 1%;
   font-family: bebas;
   align-content: center;
-  color: white;
   background-color: black;
-}
-.col-xs-12{
-  padding-right:0px;  
 }
 .foto {
   background-image: url(img/a.jpg);
@@ -105,59 +109,53 @@ body {
   border-radius: 100%;
   margin-bottom: 0.75%;
 }
-
-.data p{
-  color: white;
-}
-
 .legenda p{
-  color: white;
   text-align: justify;
   font-size: 175%;
   font-family: bebas;
-  z-index: -99;
 }
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  margin: auto;
-}
+
+/*________________________________________________________________*//*________________________________________________________________*/
+/*________________________________________________________________*//*________________________________________________________________*/
+
 @media screen and (max-width: 960px ) {
   body {
     padding-top: 16%;
-    overflow-x: hidden;
   }
+
   .carousel-inner > .item {
     min-height: 300px;
     max-height: 300px;
     align-items: center;
   }
-  .foto {
-    padding: 75%;
-  }
-  .foto-offset{
-    margin-left:15%;
-  }
-  .item_menu{
-    border: thick solid black;
-  }
-  .item_menu_hide_overflow{
-    padding: 4% 6% 4% 10%;
-    border-left: none;
-    border-right: none;
-  }
   .mainpanel {
     margin-left: 5.8%;
     margin-right: -4%;
   }
+
+  .item-menu{
+    border: thick solid black;
+  }
+
+  .foto-offset{
+    margin-left:15%;
+  }
+
+  .hide-overflow{
+    padding: 4% 6% 4% 10%;
+    border-left: none;
+    border-right: none;
+  }
 }
 @media screen and (min-width: 960px ) {
-  .foto-offset{
-    margin-left:38%;
-  }
   .mainpanel {
     margin-left: 7.5%;
   }
-  .item_menu_hide_overflow{
+  .foto-offset{
+    margin-left:38%;
+    margin-bottom: 3%;
+  }
+  .hide-overflow{
     padding: 1% 4% 1% 4%;
     border-left: none;
     border-right: none;
@@ -174,6 +172,9 @@ body {
   }
 }
 @media screen and (min-width: 1200px ) {
+  .carousel-inner > .item {
+    min-height: 500px;
+  }
   .foto {
     padding: 50%;
   }
@@ -184,7 +185,4 @@ body {
     font-size: 225%;
   }
 
-  .carousel-inner > .item {
-    min-height: 500px;
-  }
 }
