@@ -1,10 +1,14 @@
 var clicks = 0;
 var store = [];
+var sound = [];
+
 var open1;
 var open2;
+
 var count = 0;
+
 var h4 = document.getElementById("count");
-var sound = [];
+
 sound.push(document.getElementById("bir"));
 sound.push(document.getElementById("mor"));
 sound.push(document.getElementById("hds"));
@@ -15,7 +19,6 @@ function load(){
   sound[2].play();
   for (var i = 0; i < 500000000; i++) {  }
   h4.textContent = "0";
-
 
   var r = "r";
   var c = "c";
@@ -47,7 +50,6 @@ function load(){
     store.push(obj);
 
     card.setAttributeNode(empty);
-
   }
 }
 
@@ -77,9 +79,10 @@ function show(id){
 
       if (count >= 8){
         sound[3].play();
-        for (var i = 0; i < 500000000; i++) {  }
-
-        load();
+        clicks = 0;
+        store = [];
+        for (var i = 0; i < 500000000; i++) { }
+        return load();
       }
     }
   }
@@ -89,11 +92,11 @@ function show(id){
       var a = document.createAttribute("style");
       var o = store[i-1];
 
-
       c.setAttributeNode(o.empty);
     }
     clicks = 1;
   }
+
   card.setAttributeNode(obj.style);
 
 }
