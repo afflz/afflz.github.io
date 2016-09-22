@@ -1,0 +1,37 @@
+footer.page-footer {
+  margin-top: 0px;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.dropleft-main {
+  top:10px;
+  position:relative;
+  display: inline;
+}
+
+.dropleft-links {
+  top:-25px;
+}
+.waves-effect.waves-indigo .waves-ripple {
+  background-color: rgba(40, 53, 147, 0.7);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .l-btn{
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .s-btn{
+  display: none;
+  }
+}
