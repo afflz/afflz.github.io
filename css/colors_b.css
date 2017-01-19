@@ -1,5 +1,5 @@
 .mainpanel_color {
-	border-top: thick solid rgb(0,127,255);
+	border: thick solid rgb(0,127,255);
 	border-bottom: thick solid rgb(0,127,255);
 	background-color: rgb(20, 75, 125);
 }

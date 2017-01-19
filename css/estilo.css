@@ -11,6 +11,10 @@
   src :url(fonts/o24d.ttf);
 }
 @font-face {
+  font-family: geo;
+  src :url(fonts/geo.ttf);
+}
+@font-face {
   font-family: bebas;
   src :url(fonts/bebas.otf);
 }
@@ -43,7 +47,6 @@ header {
   z-index: 100;
   font-size: 275%;
   text-align: center;
-  margin: -10px -10px 2% -10px;
 }
 header p{
   margin: 0;
@@ -65,7 +68,6 @@ footer{
   padding-bottom: 5%;
   font-family: bebas;
   z-index: 100;
-  margin: 2% -10px -10px -10px;
 }
 footer p{
   margin: 0;
@@ -76,9 +78,7 @@ footer p{
 /*________________________________________________________________*/
 /*________________________________________________________________*/
 
-.col-xs-12 {
-  padding-right:0px;
-}
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   margin: auto;
@@ -93,7 +93,7 @@ footer p{
 .mainpanel {
   padding-left: 2%;
   padding-right: 2%;
-  margin-left: 7.5%;
+  margin-left: 3.75%;
   padding-bottom: 2.5%;
   border-radius: 20px;
 }
@@ -105,24 +105,49 @@ footer p{
   background-color: black;
 }
 .foto {
-  background-image: url(img/a.jpg);
-  padding: 75%;
+  background-image: url(https://www.gravatar.com/avatar/2581c0a85292dcf90799a7319c9c5e5d?s=400.jpg);
+  width: 10%;
+  height: 10%;
+  padding: 25%;
+  margin-left: 25%;
   background-size: 100% 100%;
   border-radius: 100%;
-  margin-bottom: 0.75%;
+  margin-bottom: 1.5%;
+
+}
+.foto-offset{
+  align-content: center;
+}
+.foto:hover {
+  transform: rotate(360deg);
+  border-color: black;
+  background-size: 85% 85%;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url(img/fav_inv.png);
+  border-radius: 0;
+  overflow: visible;
 }
 .legenda p{
   text-align: justify;
-  font-size: 175%;
-  font-family: bebas;
+  font-size: 145%;
+  font-family: geo;
+}
+.hide-overflow{
+  padding: 1% 4% 1% 4%;
+  border-left: none;
+  border-right: none;
 }
 
 /*________________________________________________________________*//*________________________________________________________________*/
 /*________________________________________________________________*//*________________________________________________________________*/
 
-@media screen and (max-width: 960px ) {
+@media screen and (max-width: 560px ) {
   body {
     padding-top: 16%;
+  }
+  .mainpanel {
+    margin-left: 0;
   }
 
   .carousel-inner > .item {
@@ -130,61 +155,53 @@ footer p{
     max-height: 300px;
     align-items: center;
   }
-  .mainpanel {
-    margin-left: 5.8%;
-    margin-right: -4%;
-  }
 
   .item-menu{
     border: thick solid black;
   }
-
-  .foto-offset{
-    margin-left:15%;
+  .foto {
+    padding: 35%;
+    margin-left: 15%;
   }
-
   .hide-overflow{
-    padding: 4% 6% 4% 10%;
+    padding: 8% 6% 5% 6%;
     border-left: none;
     border-right: none;
   }
 }
-@media screen and (min-width: 960px ) {
-  .mainpanel {
-    margin-left: 7.5%;
-  }
-  .foto-offset{
-    margin-left:38%;
-    margin-bottom: 3%;
-  }
-  .hide-overflow{
-    padding: 1% 4% 1% 4%;
-    border-left: none;
-    border-right: none;
-  }
-  .foto:hover {
-    transform: rotate(360deg);
-    border-color: black;
-    background-size: 85% 85%;
-    background-repeat: no-repeat;
-    background-position:center;
-    background-image: url(img/fav_inv.png);
-    border-radius: 0;
-    overflow: visible;
+@media screen and (min-width: 960px ) and (max-width: 1200px) {
+  .foto {
+    padding: 12%;
+    margin-left: 38%;
   }
 }
-@media screen and (min-width: 1200px ) {
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+  .foto {
+    padding: 10%;
+    margin-left: 40%;
+    margin-top: 2%;
+  }
   .carousel-inner > .item {
     min-height: 500px;
   }
+}
+@media screen and (min-width: 1600px ) {
   .foto {
-    padding: 50%;
+    padding: 6%;
+    margin-left: 43%;
   }
-  .foto-offset{
-    margin-left:41%;
+  .carousel-inner > .item {
+    min-height: 500px;
   }
   .legenda p{
-    font-size: 225%;
-  }
 
+    font-size: 185%;
+
+  }
+}
+.row{
+  margin-left: 0;
+  margin-right: 0;
 }
